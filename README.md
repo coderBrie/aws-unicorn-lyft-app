@@ -90,6 +90,7 @@ Query Optimization: DynamoDB queries are optimized to minimize read/write operat
 ## The Application Code
 The application code is here in this repository.
 
+
 ## The Lambda Function Code
 Here is the code for the Lambda function, originally taken from the [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ ), and updated for Node 20.x:
 
