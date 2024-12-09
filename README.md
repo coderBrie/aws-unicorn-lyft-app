@@ -44,7 +44,7 @@ Free Tier Utilization: Wherever possible, I have utilized AWS Free Tier services
 Scaling Strategies: The app dynamically scales based on demand, aws pay as you go pricing avoids unnecessary over-provisioning of resources.
 
 ## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. By using AWS Amplify user can save
+All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. 
 
 
 ## The Application Code
