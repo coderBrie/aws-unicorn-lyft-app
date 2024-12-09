@@ -8,7 +8,7 @@ The app will let you create an account and log in, then request a ride by clicki
 ## Manifesto
 In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. 
  
-I believe in rapid iteration and deployment, ensuring timely delivery of valuable features. 
+I believe in rapid iteration and deployment, taking action to ensure timely delivery of valuable features. 
 
 I take full ownership for the app's performance, monitoring it continuously and implementing improvements as needed.
  
