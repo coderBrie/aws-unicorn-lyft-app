@@ -68,9 +68,11 @@ Environment Variables: Sensitive information such as database credentials is sto
 ## Future Security Enhancements 
 Encryption: I will ensure that all data stored in DynamoDB is encrypted at rest using AWS-managed KMS keys.
 
-Private Networking: I plan to use VPC endpoints for Lambda and DynamoDB to ensure data does not leave the AWS private network.
-
 Multi-Factor Authentication (MFA): I will implement MFA in Cognito for additional security during user authentication.
+
+Private Networking: I plan to use VPC endpoints for Lambda and DynamoDB to ensure data does not leave the AWS private network. See Example VPC Infrastructure below:
+![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/cb69d6a461f18a68a0d1cd9cdbe47832a05c26ff/Web-App-Architecture-Diagram.jpg)
+
 
 ## Cost
 All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. 
