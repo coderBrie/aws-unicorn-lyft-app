@@ -6,13 +6,15 @@ We're creating a web application for a unicorn ride-sharing service called Wild 
 The app will let you create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).  The code can also be extended to build out more functionality.
 
  In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. I believe in rapid iteration and deployment, ensuring timely delivery of valuable features. I take full ownership for the app's performance, monitoring it continuously and implementing improvements as needed.
+Here are some of the benefits to this apps cloud architecture:
 
 Scalability
 Lambda Scaling: I leveraged AWS Lambda's auto-scaling capabilities to ensure that the backend automatically adjusts to handle fluctuations in user requests.
 DynamoDB Auto Scaling: DynamoDB's auto-scaling feature is enabled to dynamically adjust read and write capacity, ensuring efficient handling of varying traffic patterns.
-CloudFront for Global Distribution: I’ve integrated Amazon CloudFront to distribute content globally and reduce latency for end users.
+Future Scalabilty:
+CloudFront for Global Distribution: Integrate Amazon CloudFront to distribute content globally and reduce latency for end users.
 API Gateway Throttling: Throttling limits are set on API Gateway to handle traffic surges while protecting the backend from overload.
-Here are some of the benefits to this apps cloud architecture:
+
 
 High Availability
 Multi-AZ DynamoDB: DynamoDB inherently provides multi-AZ data replication, ensuring high availability and data durability.
@@ -23,13 +25,14 @@ If the company goes global we can use route 53 and add disastery recovery.
 Cost Optimization
 Free Tier Utilization: Wherever possible, I have utilized AWS Free Tier services during development and testing phases to minimize costs.
 Scaling Strategies: The app dynamically scales based on demand, aws pay as you go pricing avoids unnecessary over-provisioning of resources.
-Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs.
-
-Future Cost Optimization:
-CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
 
 ## Cost
 All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. By using AWS Amplify user can save
+
+Future Cost Optimization:
+CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
+Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
+
 
 App Security
 IAM Policies: The app uses IAM roles and policies to enforce least privilege access, protecting sensitive resources.
