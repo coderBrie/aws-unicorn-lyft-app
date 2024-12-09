@@ -8,42 +8,43 @@ The app will let you create an account and log in, then request a ride by clicki
  In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. I believe in rapid iteration and deployment, ensuring timely delivery of valuable features. I take full ownership for the app's performance, monitoring it continuously and implementing improvements as needed.
 Here are some of the benefits to this apps cloud architecture:
 
-Scalability
+## Scalability
 Lambda Scaling: I leveraged AWS Lambda's auto-scaling capabilities to ensure that the backend automatically adjusts to handle fluctuations in user requests.
 DynamoDB Auto Scaling: DynamoDB's auto-scaling feature is enabled to dynamically adjust read and write capacity, ensuring efficient handling of varying traffic patterns.
+
 Future Scalabilty:
 CloudFront for Global Distribution: Integrate Amazon CloudFront to distribute content globally and reduce latency for end users.
 API Gateway Throttling: Throttling limits are set on API Gateway to handle traffic surges while protecting the backend from overload.
 
 
-High Availability
+## High Availability
 Multi-AZ DynamoDB: DynamoDB inherently provides multi-AZ data replication, ensuring high availability and data durability.
 Lambda Regional Deployment: To minimize downtime, I plan to deploy Lambda functions in multiple regions, enabling regional failover if required.
 Amplify Hosting: AWS Amplify hosting ensures automatic scaling and self-healing for the frontend.
 If the company goes global we can use route 53 and add disastery recovery.
 
-Cost Optimization
-Free Tier Utilization: Wherever possible, I have utilized AWS Free Tier services during development and testing phases to minimize costs.
-Scaling Strategies: The app dynamically scales based on demand, aws pay as you go pricing avoids unnecessary over-provisioning of resources.
-
-## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. By using AWS Amplify user can save
-
-Future Cost Optimization:
-CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
-Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
 
 
-App Security
+## App Security
 IAM Policies: The app uses IAM roles and policies to enforce least privilege access, protecting sensitive resources.
 Cognito Authentication: Cognito handles user sign-up, sign-in, and access controls, ensuring user authentication is secure.
 API Gateway Authorizers: I’ve implemented authorizers to validate incoming API requests and restrict access to unauthorized users.
 Environment Variables: Sensitive information such as database credentials is stored securely in Lambda environment variables.
 
-Future Security Enhancements 
+## Future Security Enhancements 
 Encryption: I will ensure that all data stored in DynamoDB is encrypted at rest using AWS-managed KMS keys.
 Private Networking: I plan to use VPC endpoints for Lambda and DynamoDB to ensure data does not leave the AWS private network.
 Multi-Factor Authentication (MFA): I will implement MFA in Cognito for additional security during user authentication.
+Future Cost Optimization:
+CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
+Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
+
+## Cost Optimization
+Free Tier Utilization: Wherever possible, I have utilized AWS Free Tier services during development and testing phases to minimize costs.
+Scaling Strategies: The app dynamically scales based on demand, aws pay as you go pricing avoids unnecessary over-provisioning of resources.
+
+## Cost
+All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. By using AWS Amplify user can save
 
 
 ## The Application Code
