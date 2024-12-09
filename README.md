@@ -10,16 +10,20 @@ Here are some of the benefits to this apps cloud architecture:
 
 ## Scalability
 Lambda Scaling: I leveraged AWS Lambda's auto-scaling capabilities to ensure that the backend automatically adjusts to handle fluctuations in user requests.
+
 DynamoDB Auto Scaling: DynamoDB's auto-scaling feature is enabled to dynamically adjust read and write capacity, ensuring efficient handling of varying traffic patterns.
 
 Future Scalabilty:
 CloudFront for Global Distribution: Integrate Amazon CloudFront to distribute content globally and reduce latency for end users.
+
 API Gateway Throttling: Throttling limits are set on API Gateway to handle traffic surges while protecting the backend from overload.
 
 
 ## High Availability
 Multi-AZ DynamoDB: DynamoDB inherently provides multi-AZ data replication, ensuring high availability and data durability.
+
 Lambda Regional Deployment: To minimize downtime, I plan to deploy Lambda functions in multiple regions, enabling regional failover if required.
+
 Amplify Hosting: AWS Amplify hosting ensures automatic scaling and self-healing for the frontend.
 If the company goes global we can use route 53 and add disastery recovery.
 
@@ -27,8 +31,11 @@ If the company goes global we can use route 53 and add disastery recovery.
 
 ## App Security
 IAM Policies: The app uses IAM roles and policies to enforce least privilege access, protecting sensitive resources.
+
 Cognito Authentication: Cognito handles user sign-up, sign-in, and access controls, ensuring user authentication is secure.
+
 API Gateway Authorizers: I’ve implemented authorizers to validate incoming API requests and restrict access to unauthorized users.
+
 Environment Variables: Sensitive information such as database credentials is stored securely in Lambda environment variables.
 
 ## Future Security Enhancements 
@@ -48,6 +55,7 @@ Scaling Strategies: The app dynamically scales based on demand, aws pay as you g
 
 Future Cost Optimization:
 CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
+
 Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
 
 ## The Application Code
