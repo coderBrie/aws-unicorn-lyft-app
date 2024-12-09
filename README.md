@@ -33,19 +33,22 @@ Environment Variables: Sensitive information such as database credentials is sto
 
 ## Future Security Enhancements 
 Encryption: I will ensure that all data stored in DynamoDB is encrypted at rest using AWS-managed KMS keys.
+
 Private Networking: I plan to use VPC endpoints for Lambda and DynamoDB to ensure data does not leave the AWS private network.
+
 Multi-Factor Authentication (MFA): I will implement MFA in Cognito for additional security during user authentication.
-Future Cost Optimization:
-CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
-Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
+
+## Cost
+All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. 
 
 ## Cost Optimization
 Free Tier Utilization: Wherever possible, I have utilized AWS Free Tier services during development and testing phases to minimize costs.
 Scaling Strategies: The app dynamically scales based on demand, aws pay as you go pricing avoids unnecessary over-provisioning of resources.
 
-## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. 
 
+Future Cost Optimization:
+CloudWatch Monitoring: Use Amazon CloudWatch to monitor resource utilization and set alerts, ensuring resources are scaled only when necessary.
+Query Optimization: DynamoDB queries are optimized to minimize read/write operations, helping to reduce operational costs
 
 ## The Application Code
 The application code is here in this repository.
