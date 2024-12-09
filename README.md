@@ -2,8 +2,29 @@
 
 We're creating a web application for a unicorn ride-sharing service called Wild Rydes (from the original [Amazon workshop](https://aws.amazon.com/serverless-workshops)).  The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB, with code stored in GitHub and incorporated into a CI/CD pipeline with Amplify.
 
+Here is the link  to live the app:
+https://main.d1kz8duxcgvpqz.amplifyapp.com/
+
 ![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/cb69d6a461f18a68a0d1cd9cdbe47832a05c26ff/Web-App-Architecture-Diagram.jpg)
-The app will let you create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).  The code can also be extended to build out more functionality.
+
+## How to use the app
+Furst
+The app will let you create an account by entering your name and email address. 
+
+Next
+The app will send you an authentication code to your email. 
+
+On the app: Renter your email address and the authentication code from your email. 
+
+Click verify to Verify your account
+
+Next
+Sign in with your email and  the password you created
+
+After log in: request a ride by clicking anywhere on the map (powered by ArcGIS) then click Set pickup to request ride 
+
+and a unicorn with gallap over to your location. 
+
 
 ## Manifesto
 In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. 
