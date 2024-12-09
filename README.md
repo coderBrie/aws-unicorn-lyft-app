@@ -5,7 +5,13 @@ We're creating a web application for a unicorn ride-sharing service called Wild 
 ![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/cb69d6a461f18a68a0d1cd9cdbe47832a05c26ff/Web-App-Architecture-Diagram.jpg)
 The app will let you create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).  The code can also be extended to build out more functionality.
 
- In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. I believe in rapid iteration and deployment, ensuring timely delivery of valuable features. I take full ownership for the app's performance, monitoring it continuously and implementing improvements as needed.
+## Manifesto
+In this tuorial I wanted to focus on the big picture: building a cost optimizing, highly available, secure application that can scale to support millions of users, with opportunities for future enhancements like ride tracking or group ride capabilities. 
+ 
+I believe in rapid iteration and deployment, ensuring timely delivery of valuable features. 
+
+I take full ownership for the app's performance, monitoring it continuously and implementing improvements as needed.
+ 
 Here are some of the benefits to this apps cloud architecture:
 
 ## Scalability
