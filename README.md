@@ -71,7 +71,7 @@ Encryption: I will ensure that all data stored in DynamoDB is encrypted at rest 
 Multi-Factor Authentication (MFA): I will implement MFA in Cognito for additional security during user authentication.
 
 Private Networking: I plan to use VPC endpoints for Lambda and DynamoDB to ensure data does not leave the AWS private network. See Example VPC Infrastructure below:
-![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/cb69d6a461f18a68a0d1cd9cdbe47832a05c26ff/Web-App-Architecture-Diagram.jpg)
+![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/d280a4ea619a057c4c17586051c7519a2b5c24c0/VPC.jpg)
 
 
 ## Cost
