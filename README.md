@@ -8,13 +8,13 @@ https://main.d1kz8duxcgvpqz.amplifyapp.com/
 ![Image Alt](https://github.com/coderBrie/aws-unicorn-lyft-app/blob/cb69d6a461f18a68a0d1cd9cdbe47832a05c26ff/Web-App-Architecture-Diagram.jpg)
 
 ## How to use the app
-Furst
+First
 The app will let you create an account by entering your name and email address. 
 
 Next
 The app will send you an authentication code to your email. 
 
-On the app: Renter your email address and the authentication code from your email. 
+On the app: Re-enter your email address and the authentication code from your email. 
 
 Click verify to Verify your account
 
